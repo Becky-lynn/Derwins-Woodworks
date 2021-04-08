@@ -1,0 +1,16 @@
+/*brandcolor is font color*/
+$brandcolor: #da7131;
+$bgcolor: #f3e1cb;
+$font1: 'Big Shoulders Stencil Display' cursive;
+$font2: 'Space Grotesk', sans-serif;
+
+
+body {
+    background-color: $bgcolor;
+    font-family: $font1;
+    }
+
+h1,h2,h3,h4,h5,h6 {
+    color: $brandcolor;
+}
+

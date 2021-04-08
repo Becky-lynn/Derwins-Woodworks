@@ -1,0 +1,30 @@
+$font2: 'Open Sans', sans-serif;
+$navcolor: #fffff0;
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+   
+  @mixin horizontal-list {
+  @include reset-list;
+  
+    li {
+      display: inline-block;
+      cursor: pointer;
+
+    margin: {
+        left:  200px;
+        right: 5em;
+      }
+    }
+  }
+  
+  main-nav ul {
+    @include horizontal-list;
+    background-color: $brandcolor;
+    font-family: $font2;
+    color: $navcolor;
+  }
+  

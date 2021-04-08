@@ -1,0 +1,27 @@
+$btncolor: #f48498;
+
+.btn-group {
+    width: 150px;
+    float: right;
+}
+button {
+   background-color: $btncolor;
+    color: $navcolor;
+    font-family: $font2;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 25%;
+    width: 104.8;
+    height: 36;
+    border: none;
+    display: block;
+}
+
+
+
+.fa-facebook-square {
+    color: #3b5998;
+    padding: 5px;
+    font-size: 1.5em;
+}
