@@ -3,7 +3,7 @@ import Default from "../layout/default.js"
 import { graphql } from "gatsby"
 import ProductItemPreview from "../components/ProductItemPreview.js"
 import Helmet from "react-helmet"
-import styles from "../SCSS/main.scss";
+import "../SCSS/main.scss";
 
 //markup
 const IndexPage = ({ data }) => {

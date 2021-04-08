@@ -1,7 +1,7 @@
  import React from "react"
  import MainNav from "../components/main-nav.js"
  import 'bootstrap/dist/css/bootstrap.css';
- import styles from '../SCSS/main.scss';
+ import '../SCSS/main.scss';
  
 
 
