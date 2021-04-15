@@ -1,18 +1,15 @@
-$btncolor: #f48498;
+//$btncolor: #f48498;
+$btncolor: #d8572a;
 
-.btn-group {
-    width: 150px;
-    float: right;
-}
-button {
-   background-color: $btncolor;
-    color: $navcolor;
+.btn {
+    background-color: $btncolor;
+    color: $popcolor;
     font-family: $font2;
     margin-top: 20px;
     margin-right: 20px;
     cursor: pointer;
     border-radius: 25%;
-    width: 104.8;
+    width: 104px;
     height: 36;
     border: none;
     display: block;

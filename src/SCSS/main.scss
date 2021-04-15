@@ -1,3 +1,4 @@
+//main.scss
 @import 'theme';
 @import 'navbar';
 @import 'btn';
@@ -5,29 +6,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet');
 @import url('https://fonts.gstatic.com');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Parisienne&display=swap" rel="stylesheet');
-@import url('https://fonts.gstatic.com'); 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet');
-@import url('https://fonts.gstatic.com');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+//theme.scss
+$brandcolor: #d8572a;
+$bgcolor: #faf5f0;
+$popcolor: #5b4b49;
+$font1: 'Big Shoulders Stencil Display', cursive;
+$font2: 'Space Grotesk';
 
+//theme.scss
+body {
+  background-color: $bgcolor;
+  }
+
+h2,h3,h4,h5,h6,p {
+  color: $brandcolor;
+  font-family: $font2;
+}
+
+p {
+  font-weight: bold;
+}
+
+
+//main.scss
+header {
+  background: url(https://images.unsplash.com/photo-1611072337226-1140ab367200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1579&q=80);
+
+}
 
 .header {
-  width: fit-content;
-    display: inline-block;
-    margin-left: 50px;
+  width: 100%;
+  // margin-top: 20px;
 }
 
 h1 {
-  font-size: 60px; 
-  margin-bottom: 5px;
+  text-align: center;
+ .bigFont{
+  font-family: $font1;
+  font-size: 1.5em;
+ }
+ .smallFont{
+   font-family: $font2;
+   font-size: .6em;
+   display: flow-root;
+   margin-left: 30px;
+   font-weight: bold;
+ }
   
+ 
 }
 
 h2{
   font-size: 30px;
   text-align: center;
 }
-
-
 
 

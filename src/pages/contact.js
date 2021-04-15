@@ -4,77 +4,68 @@ import Default from "../layout/default.js"
 export default function Contact() {
     return (
         <Default>
-
-          <h1>Contact Us</h1>
-
-          <div className="h2 feature">
-   <h2 className="page help">Contact US</h2>
-   <span className="block"></span>
-  </div>
-
-  <div className="container help">
+           <h3 className="page help">Please let us know how we can help...</h3>
+             <span className="block"></span>
   
-  <form className="help" method="POST" action="https://webhook.site/40ab67be-f734-428e-aa7a-48f505efc54a">
+          <form name="contact" method="POST" data-netlify="true" actions="/pages/thankyou.js">
 
-  <div className="row">
-   <div className="col-sm-12 col-md-6 offset-md-3">
+         <div className="row">
+         <div className="col-sm-12 col-md-6 offset-md-3">
 
-    <div className="form-group">
-	 <label htmlFor="firstName">First Name:</label>
-	  <input className="form-control" type="text" name="firstName" id="firstName" placeholder="John" required />
-	 </div>
+         <div className="form-group">
+	         <label htmlFor="firstName">Your First Name:</label>
+	         <input className="form-control" type="text" name="firstName" id="firstName" placeholder="John" required />
+	       </div>
+       </div>
+     </div>
+
+     <div className="row">
+   	  <div className="col-sm-12 col-md-6 offset-md-3">
+   	   <div className="form-group">
+	        <label htmlFor="lastName">Last Last Name: </label>
+	        <input className="form-control" type="text" name="lastName" id="lastName" placeholder="Doe" required />
+	     </div>
+	    </div>
+	   </div>
+
+     <div className="row">
+   	  <div className="col-sm-12 col-md-6 offset-md-3">
+
+       <div className="form-group">
+	      <label htmlFor="email">Your Email Address:</label>
+	      <input className="form-control" type="email" name="email" id="email" placeholder="you@email.com" required />
+	    </div>
+	   </div>
     </div>
-   </div>
 
-   <div className="row">
-   	<div className="col-sm-12 col-md-6 offset-md-3">
+    <div className="row">
+   	 < div className="col-sm-12 col-md-6 offset-md-3">
 
-   	 <div className="form-group">
-	  <label htmlFor="lastName">Last Name: </label>
-	   <input className="form-control" type="text" name="lastName" id="lastName" placeholder="Doe" required />
-	  </div>
-	 </div>
-	</div>
-
-   <div className="row">
-   	<div className="col-sm-12 col-md-6 offset-md-3">
-
-     <div className="form-group">
-	  <label htmlFor="email">Email Address:</label>
-	   <input className="form-control" type="email" name="email" id="email" placeholder="you@email.com" required />
-	 </div>
-	</div>
-   </div>
-
-   <div className="row">
-   	<div className="col-sm-12 col-md-6 offset-md-3">
-
-   	 <div className="form-group">
-	  <label htmlFor="phone">Telephone Number:</label>
-	   <input className="form-control" type="phone" name="phone" id="phone" placeholder="123-456-7890" required />
-	  </div>
-	 </div>
+   	  <div className="form-group">
+	      <label htmlFor="phone">Your Phone Number:</label>
+	      <input className="form-control" type="tel" name="phone" id="phone" placeholder="123-456-7890" required />
+	    </div>
+	   </div>
     </div>
 
     <div className="row">
      <div className="col-sm-12 col-md-6 offset-md-3">
 
       <div className="form-group">
-	   <label htmlFor="comment">Comment:</label>
-	    <textarea className="form-control" name="comment" id="comment" cols="30" rows="10"  placeholder="Add comment here."></textarea>
+	      <label htmlFor="comment">Your Message:</label>
+        <textarea className="form-control" name="message" id="message" cols="30" rows="10"  placeholder="Your Message..."></textarea>
+	    </div>
+	   </div>
 	  </div>
-	 </div>
-	</div>
 
     <div className="row">
      <div className="col-sm-12 col-md-6 offset-md-3">
 
-       <button className="btn btn-primary">Send</button>
+       <button type="submit" className="btn btn-primary">Contat Us</button>
      </div>
     </div>
 
-  </form>
- </div>
+   </form>
         </Default>
     )
 }

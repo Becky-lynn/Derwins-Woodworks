@@ -1,5 +1,10 @@
-$font2: 'Open Sans', sans-serif;
-$navcolor: #fffff0;
+$popcolor: #5b4b49;
+$btncolor: #d8572a;
+$brandcolor: #d8572a;
+$navcolor: #d8572a;
+$bgcolor: #faf5f0;
+
+$font2: 'Space Grotesk';
 
 @mixin reset-list {
     margin: 0;
@@ -11,20 +16,60 @@ $navcolor: #fffff0;
   @include reset-list;
   
     li {
-      display: inline-block;
+      display: inline;
       cursor: pointer;
 
     margin: {
-        left:  200px;
-        right: 5em;
+        left:  100px;
+        right: 4em;
       }
     }
   }
   
-  main-nav ul {
+
+   nav{ 
     @include horizontal-list;
-    background-color: $brandcolor;
     font-family: $font2;
-    color: $navcolor;
+    background-color: $navcolor;
+   a{
+     color: $bgcolor;
+     }
+     }
+
+     .bottomNav {
+       font-family: $font2;
+      li{
+      display: inline;
+      cursor: pointer;
+      padding: 25px;
+       }
+    ul{
+      list-style: none;
+      padding: 20px;
+      } 
+     a {
+       color: $brandcolor;
+     }  
+     }
+
+  .main-nav {
+    margin-top: 20px  ;
+    Link {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
   }
+
+  .fa-shopping-cart {
+    float: right;
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: .5px solid $popcolor;
+}
   

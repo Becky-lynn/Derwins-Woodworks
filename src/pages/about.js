@@ -7,9 +7,9 @@ export default function About() {
 
          <div className="row">
           <div className="col-sm-4">
-            <h1>About Us</h1>
+            {/* <h1>About Us</h1> */}
 
-            <p>Welcome to Derwin's Woodworks</p>
+            {/* <p>Welcome to Derwin's Woodworks</p> */}
             <p><img className="img-fluid" src="/images/fredderwin.png" alt="Fred Derwin" /></p>
           </div>
           <div className="col-sm-8">

@@ -1,7 +1,7 @@
 import * as React from "react"
 import Default from "../layout/default.js"
 import { graphql } from "gatsby"
-import ProductItemPreview from "../components/ProductItemPreview.js"
+import ProductItemPreview from "../components/productItemPreview.js"
 import Helmet from "react-helmet"
 import "../SCSS/main.scss";
 
@@ -17,12 +17,15 @@ const IndexPage = ({ data }) => {
            <meta property="og:url" content="https://Derwin's Woodworks.com" />
            <meta property="og:image" content="https://.jpg" />
          </Helmet>
-       <h2>Welcome to Derwin's Woodworks</h2>      
-       <h3>Handcrafted Wooden Toys and Furniture</h3>
+         <div className="welcome">
+         <h2>Welcome to Derwin's Woodworks</h2>   
+         </div>   
+         <div className="row">
          
          {data.allContentfulProduct.nodes.map(product =>(
            <ProductItemPreview product={product}></ProductItemPreview>
           ))}
+          </div>
        </Default>
       )
     }
@@ -31,17 +34,21 @@ const IndexPage = ({ data }) => {
    
    export const query = graphql`
    query MyQuery {
-     allContentfulProduct {
-       nodes {
-         image {
-           file {
-             url
-           }
-         }
-         name
-         cost
-         id
-       }
-     }
-   }
+    allContentfulProduct {
+      nodes {
+        id
+        name
+        cost
+        quantity
+        description {
+          description
+        }
+        image {
+          file {
+            url
+          }
+        }
+      }
+    }
+  }
    `

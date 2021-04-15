@@ -1,6 +1,7 @@
 /*brandcolor is font color*/
-$brandcolor: #da7131;
+$brandcolor: #d8572a;
 $bgcolor: #f3e1cb;
+$popcolor: #468189;
 $font1: 'Big Shoulders Stencil Display' cursive;
 $font2: 'Space Grotesk', sans-serif;
 
@@ -14,3 +15,11 @@ h1,h2,h3,h4,h5,h6 {
     color: $brandcolor;
 }
 
+form.help{
+    margin: 50px 125px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #468189;
+    background-color: #f1edea;
+    color: $popcolor;
+}

@@ -19,5 +19,7 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-fontawesome-css",
+    
   ],
 };
