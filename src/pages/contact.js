@@ -7,8 +7,9 @@ export default function Contact() {
            <h3 className="page help">Please let us know how we can help...</h3>
              <span className="block"></span>
   
-          <form name="contact" method="POST" data-netlify="true" actions="/pages/thankyou.js">
-
+          <form name="contact" method="POST" data-netlify="true" actions="/thankyou.js">
+          <input type="hidden" name="form-name" value="contact" />
+          
          <div className="row">
          <div className="col-sm-12 col-md-6 offset-md-3">
 
