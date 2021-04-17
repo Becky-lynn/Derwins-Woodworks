@@ -1,5 +1,6 @@
  import React from "react"
  import MainNav from "../components/main-nav.js"
+ import { CartContextProvider } from "../../shopping.js"
  import 'bootstrap/dist/css/bootstrap.css';
  import '../SCSS/main.scss';
  
@@ -7,7 +8,7 @@
 
  export default function Default({children}) {
     return(
-        <>
+        <CartContextProvider>
         <header>
          <div className="container header">
           <div className="row">
@@ -57,6 +58,6 @@
          </div>
          <hr></hr>
        </footer>
-    </>
+    </CartContextProvider>
      )
  }

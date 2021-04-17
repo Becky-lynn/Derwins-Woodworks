@@ -1,9 +1,12 @@
 import React from "react"
 import Default from "../layout/default.js"
+import SEO from "../components/seo.js"
 
 export default function About() {
     return (
         <Default>
+
+        <SEO title="About Derwin's Woodworks"></SEO>
 
          <div className="row">
           <div className="col-sm-4">

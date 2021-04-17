@@ -1,6 +1,8 @@
 import React from "react"
 import Default from "../layout/default.js"
 import { Link } from "gatsby"
+import SEO from "../components/seo.js"
+import AddToCart from "../components/add-to-cart.js"
 
 export default function ProductPage({ pageContext }) {
 
@@ -8,6 +10,9 @@ export default function ProductPage({ pageContext }) {
 
     return(
         <Default>
+
+         <SEO title={product.name} description={"I hope you enjoy shopping on our site."}></SEO>
+
          <div className="row product">
              <div className="col-sm-4">
                 <img className="img-fluid" src={product.image.file.url} alt={product.name} />
@@ -31,6 +36,8 @@ export default function ProductPage({ pageContext }) {
                  <p>
                  <Link to="/" className="btn btn-primary">Return to Home</Link>
                  <button className="btn btn-primary">Add to Cart</button>
+                 ${product.cost}
+                 <AddToCart item={ {cost: product.cost, name: product.name} }></AddToCart>
                  </p>
               </div>
         </Default>

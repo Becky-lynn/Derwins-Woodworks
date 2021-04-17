@@ -5,6 +5,13 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Fred Derwin's Woodworks",
+    // siteURL: "netlify web address",
+    titleTemplate: "%s - Derwin's Woodworks",
+    description:
+      "Our Arkansas cutting boards are amazing!  They are made with different types of wood to give them a unique look.",
+    // url: "netlify web address",  
+    image: "/images/fredderwin.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@occlumency",
   },
   plugins: [
     {
