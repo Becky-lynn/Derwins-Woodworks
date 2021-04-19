@@ -6,10 +6,12 @@ exports.createPages = async ({ graphql, actions }) => {
   query MyQuery {
     allContentfulProduct {
       nodes {
-        id
+        slug
         name
+        category{
+          name
+        }
         cost
-        quantity
         description {
           description
         }
@@ -21,12 +23,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   }
+  
     `)
 
   const productTemplate = path.resolve(`src/templates/product-page.js`)
   queryResults.data.allContentfulProduct.nodes.forEach(node => {
     createPage({
-      path: `/product/${node.id}`,
+      path: `/product/${node.slug}`,
       component: productTemplate,
       context: {
         // This time the entire product is passed down as context

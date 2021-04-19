@@ -13,13 +13,17 @@ const IndexPage = ({ data }) => {
          <SEO title="Handcrafted Wooden Toys and Furniture"></SEO>
 
          <div className="welcome">
-         <h2>Welcome to Derwin's Woodworks</h2>   
+         <h2>Welcome to Derwin's Woodworks!</h2> 
+          <p>All of our products are made from wood that is purchased from local saw mills.<br/>
+             The color of the products vary depending on the type of wood used.</p> 
+             <hr></hr>
          </div>   
          <div className="row">
          
          {data.allContentfulProduct.nodes.map(product =>(
            <ProductItemPreview product={product}></ProductItemPreview>
           ))}
+
           </div>
        </Default>
       )
@@ -29,12 +33,14 @@ const IndexPage = ({ data }) => {
    
    export const query = graphql`
    query MyQuery {
-    allContentfulProduct {
+    allContentfulProduct(sort: {fields: Position, order: ASC}) {
       nodes {
-        id
+        slug
         name
+        category{
+          name
+        }
         cost
-        quantity
         description {
           description
         }
@@ -45,5 +51,5 @@ const IndexPage = ({ data }) => {
         }
       }
     }
-  }
+  }  
    `

@@ -3,7 +3,7 @@ $btncolor: #d8572a;
 
 .btn {
     background-color: $btncolor;
-    color: $popcolor;
+    color: $bgcolor;
     font-family: $font2;
     margin-top: 20px;
     margin-right: 20px;
@@ -14,6 +14,17 @@ $btncolor: #d8572a;
     border: none;
     display: block;
 }
+
+//.btn-primary:hover,
+// .btn-primary{
+// 	color:#9a031e;
+// 	background-color: #94b394;
+// }
+.btn-primary:hover{
+	background-color: #faf5f0;
+	color: #d8572a;
+}
+
 
 
 

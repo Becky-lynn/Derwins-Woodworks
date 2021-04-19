@@ -36,6 +36,11 @@ $font2: 'Space Grotesk';
      }
      }
 
+     .topNav {
+      border-top: 3px solid #5b4b40;
+      border-bottom: 3px solid #5b4b40;;
+     }
+
      .bottomNav {
        font-family: $font2;
       li{

@@ -5,11 +5,13 @@
      return(
     <>
        <div className="col-sm-4 col-md-4 col-lg-4">
- 	      <img className="img-fluid" src={product.image.file.url} alt={product.name} />
+        <div className="products">
+            <img className="img-fluid" src={product.image.file.url} alt={product.name} />
+            <h4>{product.name}</h4>
+            <p>{product.cost}</p>
 
-         <h4>{product.name}</h4>
-         <p>{product.cost}</p>
-         <Link to={"/product/" + product.id} className="btn btn-primary">Learn More</Link>
+         <Link to={"/product/" + product.slug} className="btn btn-primary">Details</Link>
+         </div>
        </div>
      </>
    )

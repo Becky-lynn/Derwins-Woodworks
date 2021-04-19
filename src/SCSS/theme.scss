@@ -23,3 +23,35 @@ form.help{
     background-color: #f1edea;
     color: $popcolor;
 }
+
+.products {
+    margin: 20px;
+    border: 1px solid #faf5f0;
+    margin: 20px;
+    background-color: #5b4b40;
+    padding-bottom: 20px;
+    img {
+        width: 200px;
+        padding-top: 25px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    h4 {
+        text-align: center;
+        font-size: 1em;
+        padding-top: 10px;
+        margin-bottom: 0;
+        color: #faf5f0;
+    }
+    p {
+        text-align: center;
+        color: #faf5f0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .btn {
+        text-align: center;
+        margin: auto;
+    }
+}
