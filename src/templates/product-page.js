@@ -13,33 +13,45 @@ export default function ProductPage({ pageContext }) {
 
          <SEO title={product.name} description={"I hope you enjoy shopping on our site."}></SEO>
 
-         <div className="row product">
+         <div className="row productPage">
              <div className="col-sm-4">
                 <img className="img-fluid" src={product.image.file.url} alt={product.name} />
              </div>
 
              <div className="col-sm-4" description>
                 <h4>{product.name}</h4>
-                 <p>{product.description.description}</p>
-                 <p>{product.cost}</p>
+                <p className="productPageCost">{product.cost}</p>
+                <p>{product.description.description}</p>
              </div>
 
              <div className="col-sm-4">
-              <label htmlFor="quanity" className="order" for="quanity">Select quanity:</label>
-               <select className="order" name="quanity" size="1">
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-               </select>
-              </div>
-                 <p>
-                 <Link to="/" className="btn btn-primary">Return to Home</Link>
-                 <button className="btn btn-primary">Add to Cart</button>
-                 ${product.cost}
-                 <AddToCart item={ {cost: product.cost, name: product.name} }></AddToCart>
-                 </p>
-              </div>
+              <div className="quanityWrapper">   
+               <div> 
+                    <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
+               </div>     
+                    <select className="productQuanity" name="quanity" size="1">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                    </select>
+                    </div>
+                  <div className="cartButtons">  
+                  ${product.cost}
+
+                    <AddToCart item={ {sku: product.slug, price: product.cost, name: product.name} }></AddToCart>
+                    <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
+                    <Link to="/" className="btn btn-primary">Continue Shopping</Link>
+                    
+                 </div>
+               </div>     
+                 {/* <p>
+                    
+                    {/* ${product.cost} */}
+                 {/* </p> */} 
+
+               </div>
+                
         </Default>
     )
 }

@@ -1,7 +1,7 @@
 /*brandcolor is font color*/
 $brandcolor: #d8572a;
-$bgcolor: #f3e1cb;
-$popcolor: #468189;
+$bgcolor: #faf5f0;
+$popcolor: #5b4b40;
 $font1: 'Big Shoulders Stencil Display' cursive;
 $font2: 'Space Grotesk', sans-serif;
 
@@ -23,7 +23,7 @@ form.help{
     background-color: #f1edea;
     color: $popcolor;
 }
-
+//Home Page
 .products {
     margin: 20px;
     border: 1px solid #faf5f0;
@@ -55,3 +55,69 @@ form.help{
         margin: auto;
     }
 }
+
+//Product-Page
+.productPage {
+    margin-top: 50px;
+    img {
+        border: 4px solid;
+    }
+    h4 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 10px;
+       }
+    .productPageCost {
+        color: #d8572a;
+    } 
+    .quanityWrapper{
+        border: 1px solid;
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+        //inline-size: fit-content;
+    } 
+    .productQuanity{
+        border-style: hidden;
+        width: 100px;
+    } 
+    .cartButtons{
+        margin-left: 20px;
+        justify-content: center;
+        display: grid;
+    }
+    }
+
+    //Shopping Cart Page
+    .shoppingCart {
+        margin-top: 50px;
+    }
+
+    //About Page
+    .about {
+        margin-top: 50px;
+    }
+
+    //Contact Page
+
+    .contact{
+        margin-top: 50px;
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    hr {
+        margin-bottom: 30px;
+    }
+    label {
+        font-style: $font2;
+        color: $popcolor;
+    }
+    input {
+        font-style: $font2;
+        color: $brandcolor;
+    }
+}
+
+

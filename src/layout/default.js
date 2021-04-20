@@ -3,8 +3,7 @@
  import { CartContextProvider } from "../../shopping.js"
  import 'bootstrap/dist/css/bootstrap.css';
  import '../SCSS/main.scss';
- 
-
+ import { Link } from "gatsby"
 
  export default function Default({children}) {
     return(
@@ -52,7 +51,7 @@
                      <MainNav></MainNav>
                  </div>
                  <div className="col-sm-2 icon">
-                  <i class="fa fa-facebook-f"></i>
+                  <Link href="https://www.facebook.com/Derwin-Woodworking-Shop-109586804525627" rel="facebook" className="fa fa-facebook-f"></Link>
                  </div>
              </div>
          </div>

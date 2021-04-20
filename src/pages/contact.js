@@ -7,8 +7,9 @@ export default function Contact() {
         <Default>
          <SEO title="Contact Derwin's Woodworks"></SEO> 
          
+           <div className="contact">
            <h3 className="page help">Please let us know how we can help...</h3>
-             <span className="block"></span>
+             <hr/>
   
           <form name="contact" method="POST" data-netlify="true" actions="/thankyou.js">
           <input type="hidden" name="form-name" value="contact" />
@@ -70,6 +71,7 @@ export default function Contact() {
     </div>
 
    </form>
+   </div>
         </Default>
     )
 }

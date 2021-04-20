@@ -12,8 +12,9 @@ export default function Shoppingcart() {
 
          <SEO title="Your Shopping Cart"></SEO>
 
-            <h3>Your Cart</h3>
+            <div className="shoppingCart">
             <Cart></Cart>
+            </div>
 
             <hr/>
 

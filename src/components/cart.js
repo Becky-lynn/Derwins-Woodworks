@@ -28,7 +28,7 @@ export default function Cart() {
                                         {item.qty}
                                     </td>
                                     <td>
-                                        ${(item.qty * item.price).toFixed(2)}
+                                        ${(item.qty * item.cost).toFixed(2)}
                                     </td>
                                 </tr>
                             )
