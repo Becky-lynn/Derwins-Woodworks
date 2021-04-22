@@ -1,5 +1,4 @@
 import React, { useReducer, createContext } from "react"
-import productItemPreview from "./src/components/productItemPreview";
 
 export const CartContext = createContext()
 

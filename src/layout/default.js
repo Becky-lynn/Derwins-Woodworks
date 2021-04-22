@@ -4,7 +4,6 @@
  import { CartContextProvider } from "../../shopping.js"
  import 'bootstrap/dist/css/bootstrap.css';
  import '../SCSS/main.scss';
- import { Link } from "gatsby"
  import FooterNav from "../components/footer-nav.js"
 
  export default function Default({children}) {

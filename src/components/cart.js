@@ -1,7 +1,6 @@
 import React, { useContext } from "react"
 import { CartContext } from "../../shopping.js"
 import { Link } from "gatsby"
-import productItemPreview from "./productItemPreview.js";
 
 export default function Cart() {
     const { items, taxes, subTotal, shipping, grandTotal } = useContext(CartContext);
