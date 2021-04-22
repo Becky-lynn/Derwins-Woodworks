@@ -1,4 +1,5 @@
 import React, { useReducer, createContext } from "react"
+import productItemPreview from "./src/components/productItemPreview";
 
 export const CartContext = createContext()
 
@@ -107,7 +108,7 @@ export const CartContextProvider = ({children}) => {
     }
 
     return (
-        <CartContext.Provider value={contextValues}>
+        <CartContext.Provider className="price" value={contextValues}>
             {children}
         </CartContext.Provider>
     )

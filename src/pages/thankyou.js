@@ -1,7 +1,9 @@
 import React from "react"
 import Default from "../layout/default.js"
 import { Link } from "gatsby"
+import SEO from "../components/seo.js"
 
+<SEO title="Thank you from Derwins's Woodworks"></SEO>
 export default function Thankyou() {
     return (
         <Default>

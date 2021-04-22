@@ -13,7 +13,8 @@ $btncolor: #d8572a;
     height: 36;
     border: none;
     display: block;
-}
+    text-decoration: none;
+    }
 
 //.btn-primary:hover,
 // .btn-primary{
@@ -21,15 +22,38 @@ $btncolor: #d8572a;
 // 	background-color: #94b394;
 // }
 .btn-primary:hover{
-	background-color: #faf5f0;
-	color: #d8572a;
+	background-color: $bgcolor;
+    color: $btncolor;
+    text-decoration: none;
 }
 
-
-
-
-.fa-facebook-square {
-    color: #3b5998;
-    padding: 5px;
-    font-size: 1.5em;
+  .cart{
+    .btnShopping{
+        width: fit-content;
+    }
+    .btn-primary:hover:hover{
+          color: $popcolor;
+          background-color: $btncolor;
+    }
 }
+
+ .productPage{
+     .btnShopping{
+         width: fit-content;
+     }
+     .btn-primary:hover:hover{
+           color: $popcolor;
+           background-color: $btncolor;
+    }
+ }
+
+ .btn-lg{
+     width: fit-content;
+     margin-left: 300px;
+ }
+   .btn-lg:hover:hover{
+    color: $popcolor;
+    background-color: $btncolor;
+   }  
+    
+

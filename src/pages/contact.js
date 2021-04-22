@@ -15,46 +15,46 @@ export default function Contact() {
           <input type="hidden" name="form-name" value="contact" />
           
          <div className="row">
-         <div className="col-sm-12 col-md-6 offset-md-3">
+         <div className="col-sm-12">
 
          <div className="form-group">
-	         <label htmlFor="firstName">Your First Name:</label>
+	         <label htmlFor="firstName">First Name:</label>
 	         <input className="form-control" type="text" name="firstName" id="firstName" placeholder="John" required />
 	       </div>
        </div>
      </div>
 
      <div className="row">
-   	  <div className="col-sm-12 col-md-6 offset-md-3">
+   	  <div className="col-sm-12">
    	   <div className="form-group">
-	        <label htmlFor="lastName">Last Last Name: </label>
+	        <label htmlFor="lastName">Last Name: </label>
 	        <input className="form-control" type="text" name="lastName" id="lastName" placeholder="Doe" required />
 	     </div>
 	    </div>
 	   </div>
 
      <div className="row">
-   	  <div className="col-sm-12 col-md-6 offset-md-3">
+   	  <div className="col-sm-12">
 
        <div className="form-group">
-	      <label htmlFor="email">Your Email Address:</label>
+	      <label htmlFor="email">Email Address:</label>
 	      <input className="form-control" type="email" name="email" id="email" placeholder="you@email.com" required />
 	    </div>
 	   </div>
     </div>
 
     <div className="row">
-   	 < div className="col-sm-12 col-md-6 offset-md-3">
+   	 < div className="col-sm-12">
 
    	  <div className="form-group">
-	      <label htmlFor="phone">Your Phone Number:</label>
+	      <label htmlFor="phone">Phone Number:</label>
 	      <input className="form-control" type="tel" name="phone" id="phone" placeholder="123-456-7890" required />
 	    </div>
 	   </div>
     </div>
 
     <div className="row">
-     <div className="col-sm-12 col-md-6 offset-md-3">
+     <div className="col-sm-12">
 
       <div className="form-group">
 	      <label htmlFor="comment">Your Message:</label>
@@ -64,7 +64,7 @@ export default function Contact() {
 	  </div>
 
     <div className="row">
-     <div className="col-sm-12 col-md-6 offset-md-3">
+     <div className="col-sm-12">
 
        <button type="submit" className="btn btn-primary">Contat Us</button>
      </div>

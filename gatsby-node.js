@@ -11,7 +11,7 @@ exports.createPages = async ({ graphql, actions }) => {
         category{
           name
         }
-        cost
+        price
         description {
           description
         }

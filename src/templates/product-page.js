@@ -14,17 +14,25 @@ export default function ProductPage({ pageContext }) {
          <SEO title={product.name} description={"I hope you enjoy shopping on our site."}></SEO>
 
          <div className="row productPage">
-             <div className="col-sm-4">
+             <div className="col-sm-6">
                 <img className="img-fluid" src={product.image.file.url} alt={product.name} />
              </div>
 
-             <div className="col-sm-4" description>
+             <div className="col-sm-4 description">
                 <h4>{product.name}</h4>
-                <p className="productPageCost">{product.cost}</p>
-                <p>{product.description.description}</p>
+                <p className="productPageCost">${product.price.toFixed(2)}</p>
+                
+                <p dangerouslySetInnerHTML={{ __html:product.description.description}}></p>
+                {/* <ul>
+                  <li>Length: {product.length}</li>
+                </ul> */}
+                <div className="btnShopping">
+                <Link to="/" className="btn btn-primary btnShopping">Continue Shopping</Link>
+                </div>
              </div>
 
-             <div className="col-sm-4">
+
+             <div className="col-sm-2">
               <div className="quanityWrapper">   
                <div> 
                     <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
@@ -37,11 +45,9 @@ export default function ProductPage({ pageContext }) {
                     </select>
                     </div>
                   <div className="cartButtons">  
-                  ${product.cost}
 
-                    <AddToCart item={ {sku: product.slug, price: product.cost, name: product.name} }></AddToCart>
+                    <AddToCart item={ {sku: product.slug, price: product.price, name: product.name} }></AddToCart>
                     <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
-                    <Link to="/" className="btn btn-primary">Continue Shopping</Link>
                     
                  </div>
                </div>     

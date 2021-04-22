@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
          <div className="welcome">
          <h2>Welcome to Derwin's Woodworks!</h2> 
           <p>All of our products are made from wood that is purchased from local saw mills.<br/>
-             The color of the products vary depending on the type of wood used.</p> 
+             The color of the products may vary depending on the type of wood used.</p> 
              <hr></hr>
          </div>   
          <div className="row">
@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
         category{
           name
         }
-        cost
+        price
         description {
           description
         }

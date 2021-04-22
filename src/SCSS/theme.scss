@@ -15,14 +15,7 @@ h1,h2,h3,h4,h5,h6 {
     color: $brandcolor;
 }
 
-form.help{
-    margin: 50px 125px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border: 1px solid #468189;
-    background-color: #f1edea;
-    color: $popcolor;
-}
+
 //Home Page
 .products {
     margin: 20px;
@@ -92,7 +85,28 @@ form.help{
     //Shopping Cart Page
     .shoppingCart {
         margin-top: 50px;
+        .cart {
+            color: $popcolor;
+        }
     }
+    .form-group{
+            // form{
+                margin: 5px 300px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                // border: 1px solid #468189;
+                // background-color: #f1edea;
+                color: $popcolor;
+            label {
+                font-style: $font2;
+                color: $popcolor;
+            }
+            input {
+                font-style: $font2;
+                color: $brandcolor;
+            }
+        }
+        
 
     //About Page
     .about {
@@ -116,8 +130,28 @@ form.help{
     }
     input {
         font-style: $font2;
-        color: $brandcolor;
+        color: $popcolor;
+        border: 1px solid $popcolor;
+    }
+    textarea {
+        font-style: $font2;
+        color: $popcolor;
+        border: 1px solid $popcolor;
+    }
+    .form-group{
+        // margin: 50px 125px;
+        // padding-top: 30px;
+        // padding-bottom: 30px;
+        background-color: $bgcolor;
+        color: $popcolor;
+        margin: 5px 300px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    button {
+        margin-left: 300px;
     }
 }
+
 
 

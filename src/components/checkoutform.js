@@ -27,14 +27,18 @@ export default function CheckoutForm() {
 
     return (
         <>
-            <h2>Your Details</h2>
+        <h2>Your Details</h2>
+        
 
-            <div class="form-group">
+        <form className="checkOutForm" name="checkOut" method="POST" data-netlify="true" actions="/thankyou.js">
+        <input type="hidden" name="form-name" value="contact" />
+
+            <div className="form-group">
                 <label htmlFor="emailAddress">Email address</label>
                 <input className="form-control" type="email" id="emailAddress" placeholder="name@example.com" value={email} onChange={(e) => { setEmail(e.target.value) } }/>
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
                 <label htmlFor="fullName">Your Name</label>
                 <input type="text" className="form-control" id="fullName" placeholder="Hungry Harry" value={fullname} onChange={(e) => { setFullname(e.target.value) } } />
             </div>
@@ -58,9 +62,10 @@ export default function CheckoutForm() {
                 <label htmlFor="zipCode">Zip Code</label>
                 <input className="form-control" type="text" name="zipCode" id="zipCode" placeholder="Your Zip Code" value={zipCode} onChange={(e) => { setzipCode(e.target.value) } } required />
             </div>  
-            
-
-            <button className="btn btn-lg btn-primary" onClick={() => saveOrder()}>Place Order</button>
-        </>
+            <div>
+                <button className="btn btn-lg btn-primary placeOrder" onClick={() => saveOrder()}>Place Order</button>
+            </div> 
+            </form>
+      </>    
     )
 }

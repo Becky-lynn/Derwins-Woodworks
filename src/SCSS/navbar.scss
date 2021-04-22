@@ -7,21 +7,28 @@ $bgcolor: #faf5f0;
 $font2: 'Space Grotesk';
 
 @mixin reset-list {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
   }
    
   @mixin horizontal-list {
   @include reset-list;
-  
+    ul {
+      width: fit-content;
+      display: inline-block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
     li {
       display: inline;
       cursor: pointer;
-
+      margin: 5px 40px;
+      padding-right: 5px;
+      padding-left: 5px;
     margin: {
-        left:  100px;
-        right: 4em;
+        left:  5px;
+        right: 5px;
       }
     }
   }
@@ -31,50 +38,164 @@ $font2: 'Space Grotesk';
     @include horizontal-list;
     font-family: $font2;
     background-color: $navcolor;
+    text-align: center;
    a{
      color: $bgcolor;
+     font-size: 1.3em;
+     padding: 5px;
+     margin: 30px;
      }
+     a:hover {
+        color: $popcolor;
+        text-decoration: none;
+    }
      }
 
      .topNav {
       border-top: 3px solid #5b4b40;
-      border-bottom: 3px solid #5b4b40;;
-     }
+      border-bottom: 3px solid #5b4b40;
+      //  .main.nav {
+      //   //  margin-top: 20px;
+      //   //  margin-bottom: 0%;
+      //  }
+       Link {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+      }
+      .cartBadge{
+        float: right;
+        margin: 0;
+        a.fa-shopping-cart {
+          font-size: x-large;
+          margin-top: 10px;
+          margin: 0;
+          height: fit-content;
+          color: $popcolor;
+      }
+        .badge-light {
+          color: #5b4b49;
+          background-color: #faf5f0;
+          border-radius: 10px;
+          font-size: small;
+          margin: 0;
+        }
+      }
+    }
 
-     .bottomNav {
-       font-family: $font2;
-      li{
-      display: inline;
-      cursor: pointer;
-      padding: 25px;
-       }
-    ul{
-      list-style: none;
-      padding: 20px;
-      } 
-     a {
-       color: $brandcolor;
-     }  
-     }
+    footer {
+      text-align: center;
+      .bottomNav {
+        font-family: $font2;
+        text-align : center;
+        margin-bottom: 0;
 
-  .main-nav {
-    margin-top: 20px  ;
-    Link {
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none;
+       li{
+       display: inline-block;
+       cursor: pointer;
+       padding: 20px;
+       width: fit-content;
+        }
+
+        ul{
+          list-style: none;
+          padding: 0px;
+          width: fit-content;
+          display: inline-block;
+          margin-bottom: 0;
+          } 
+
+         a {
+           color: $brandcolor;
+           text-decoration: none;
+           text-align: center;
+          } 
+
+          .fa-facebook-square {
+            color: #3b5998;
+            padding: 5px;
+            font-size: 1em;
+        }
     }
   }
 
-  .fa-shopping-cart {
-    float: right;
-    font-size: x-large;
-    margin-top: 20px;
-}
+  
+
+// .cartBadge{
+//   float: right;
+//   margin: 0;
+//   a.fa-shopping-cart {
+//     font-size: x-large;
+//     margin-top: 10px;
+//     margin: 0;
+//     height: fit-content;
+//     color: $popcolor;
+// }
+//   .badge-light {
+//     color: #5b4b49;
+//     background-color: #faf5f0;
+//     border-radius: 10px;
+//     font-size: small;
+//     margin: 0;
+//   }
+// }
 
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: .5px solid $popcolor;
 }
+
+//@ media for navbar
+@media screen and (min-width: 360px) and (max-width: 736px) {
+  header {
+    h1 {
+      .bigFont{
+      font-size: inherit;
+      }
+      .smallFont {
+        font-size: .4em;
+      }
+    }
+  }
   
+  .topNav{
+    li{
+      //display: inline;
+      //cursor: pointer;
+      padding: 0px;
+      margin: 0px;
+      width: fit-content;
+       }
+    ul{
+      //list-style: none;
+      margin: 0px;
+      padding-left: 0px;
+      width: fit-content;
+      display: inline-block;
+      font-size: smaller;
+      } 
+      a {
+        margin: 2px;
+      }
+    } 
+    .bottomNav{
+      .footer-nav {
+      li{
+        //display: inline;
+        //cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+         }
+      ul{   
+        margin: 0px;
+        padding-left: 0px;
+        width: fit-content;
+        display: inline-block;
+      }
+      a {
+        margin: 5px;
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React, { useContext } from "react"
 import { CartContext } from "../../shopping.js"
+import { Link } from "gatsby"
+import productItemPreview from "./productItemPreview.js";
 
 export default function Cart() {
     const { items, taxes, subTotal, shipping, grandTotal } = useContext(CartContext);
@@ -11,7 +13,7 @@ export default function Cart() {
                 <div className="col-sm-8">
                     <table className="table">
                         <thead>
-                            <tr>
+                            <tr className="priceHeader">
                                 <th>Item</th>
                                 <th>Qty</th>
                                 <th>Cost</th>
@@ -20,15 +22,15 @@ export default function Cart() {
                         <tbody>
                         {items.map(item => {
                             return (
-                                <tr>
+                                <tr className="price">
                                     <td>
                                         {item.sku}
                                     </td>
                                     <td>
                                         {item.qty}
                                     </td>
-                                    <td>
-                                        ${(item.qty * item.cost).toFixed(2)}
+                                    <td className="price">
+                                        ${(item.qty * item.price).toFixed(2)}
                                     </td>
                                 </tr>
                             )
@@ -36,15 +38,18 @@ export default function Cart() {
                         </tbody>
                     </table>
                 </div>
-                <div className="col-sm-4">
+                <div className="col-sm-4 cart">
 
-                    SubTotal: ${subTotal.toFixed(2)}
+                    SubTotal: <span className="price">${subTotal.toFixed(2)}</span>
                     <br />
-                    Taxes: ${taxes.toFixed(2)}
+                    Taxes: <span className="price">${taxes.toFixed(2)}</span>
                     <br />
-                    Shipping: ${shipping.toFixed(2)}
+                    Shipping: <span className="price">${shipping.toFixed(2)}</span>
                     <br />
-                    Grand Total: <strong>${grandTotal.toFixed(2)}</strong>
+                    Grand Total: <span className="price"><strong>${grandTotal.toFixed(2)}</strong></span>
+
+                    <Link to={"/"} className="btn btn-primary btnShopping">Continue Shopping</Link>
+
                 </div>
             </div>
         </>

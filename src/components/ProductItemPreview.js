@@ -8,7 +8,7 @@
         <div className="products">
             <img className="img-fluid" src={product.image.file.url} alt={product.name} />
             <h4>{product.name}</h4>
-            <p>{product.cost}</p>
+            <p>${product.price.toFixed(2)}</p>
 
          <Link to={"/product/" + product.slug} className="btn btn-primary">Details</Link>
          </div>
