@@ -1,7 +1,7 @@
 import * as React from "react"
 import Default from "../layout/default.js"
 import { graphql } from "gatsby"
-import ProductItemPreview from "../components/productItemPreview.js"
+import ProductItemPreview from "../components/ProductItemPreview.js"
 import Seo from "../components/seo.js"
 import "../SCSS/main.scss";
 
