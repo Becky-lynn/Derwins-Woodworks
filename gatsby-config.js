@@ -5,7 +5,6 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Fred Derwin's Woodworks",
-    siteURL: "https://fervent-poincare-850baa.netlify.app",
     titleTemplate: "%s - Derwin's Woodworks",
     description:
       "Our Arkansas cutting boards are amazing!  They are made with different types of wood to give them a unique look.",
