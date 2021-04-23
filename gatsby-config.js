@@ -4,13 +4,15 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Fred Derwin's Woodworks",
+    title: "Derwin's Woodworks",
+    siteUrl: "https://fervent-poincare-850baa.netlify.app",
     titleTemplate: "%s - Derwin's Woodworks",
     description:
       "Our Arkansas cutting boards are amazing!  They are made with different types of wood to give them a unique look.",
+     url: "https://fervent-poincare-850baa.netlify.app",  
     image: "/images/fredderwin.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@occlumency",
   },
+
   plugins: [
     {
       resolve: "gatsby-source-contentful",
@@ -27,7 +29,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-sitemap",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-fontawesome-css",
     
   ],
