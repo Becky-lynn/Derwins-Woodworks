@@ -2,7 +2,7 @@ import * as React from "react"
 import Default from "../layout/default.js"
 import { graphql } from "gatsby"
 import ProductItemPreview from "../components/productItemPreview.js"
-import SEO from "../components/seo.js"
+import Seo from "../components/seo.js"
 import "../SCSS/main.scss";
 
 //markup
@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
     return (
       <Default>
 
-         <SEO title="Handcrafted Wooden Toys and Furniture"></SEO>
+         <Seo title="Handcrafted Wooden Toys and Furniture"></Seo>
 
          <div className="welcome">
          <h2>Welcome to Derwin's Woodworks!</h2> 

@@ -2,14 +2,14 @@ import React from "react"
 import Default from "../layout/default.js"
 import CheckoutForm from "../components/CheckoutForm.js"
 import Cart from "../components/cart.js"
-import SEO from "../components/seo.js"
+import Seo from "../components/seo.js"
 
 
 export default function Shoppingcart() {
     return (
         <Default>
 
-         <SEO title="Your Shopping Cart"></SEO>
+         <Seo title="Your Shopping Cart"></Seo>
 
             <div className="shoppingCart">
                 <h2>Check Out</h2>

@@ -1,11 +1,11 @@
 import React from "react"
 import Default from "../layout/default.js"
-import SEO from "../components/seo.js"
+import Seo from "../components/seo.js"
 
 export default function Contact() {
     return (
         <Default>
-         <SEO title="Contact Derwin's Woodworks"></SEO> 
+         <Seo title="Contact Derwin's Woodworks"></Seo> 
          
            <div className="contact">
            <h3 className="page help">Please let us know how we can help...</h3>

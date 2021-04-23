@@ -1,7 +1,7 @@
 import React from "react"
 import Default from "../layout/default.js"
 import { Link } from "gatsby"
-import SEO from "../components/seo.js"
+import Seo from "../components/seo.js"
 import AddToCart from "../components/add-to-cart.js"
 
 export default function ProductPage({ pageContext }) {
@@ -11,7 +11,7 @@ export default function ProductPage({ pageContext }) {
     return(
         <Default>
 
-         <SEO title={product.name} description={"I hope you enjoy shopping on our site."}></SEO>
+         <Seo title={product.name} description={"I hope you enjoy shopping on our site."}></Seo>
 
          <div className="row productPage">
              <div className="col-sm-6">
