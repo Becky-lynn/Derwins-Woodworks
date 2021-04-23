@@ -35,12 +35,12 @@ export default function CheckoutForm() {
 
             <div className="form-group">
                 <label htmlFor="emailAddress">Your Email Address</label>
-                <input className="form-control" type="email" id="emailAddress" placeholder="name@example.com" value={email} onChange={(e) => { setEmail(e.target.value) } }/>
+                <input className="form-control" type="email" id="emailAddress" placeholder="Your Email Address" value={email} onChange={(e) => { setEmail(e.target.value) } }/>
             </div>
 
             <div className="form-group">
                 <label htmlFor="fullName">Your Name</label>
-                <input type="text" className="form-control" id="fullName" placeholder="Hungry Harry" value={fullname} onChange={(e) => { setFullname(e.target.value) } } />
+                <input type="text" className="form-control" id="fullName" placeholder="Your Full Name" value={fullname} onChange={(e) => { setFullname(e.target.value) } } />
             </div>
 
             <div className="form-group">
