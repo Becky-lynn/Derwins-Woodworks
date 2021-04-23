@@ -34,7 +34,7 @@ export default function CheckoutForm() {
         <input type="hidden" name="form-name" value="contact" />
 
             <div className="form-group">
-                <label htmlFor="emailAddress">Email address</label>
+                <label htmlFor="emailAddress">Your Email Address</label>
                 <input className="form-control" type="email" id="emailAddress" placeholder="name@example.com" value={email} onChange={(e) => { setEmail(e.target.value) } }/>
             </div>
 
