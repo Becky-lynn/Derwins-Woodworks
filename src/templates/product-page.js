@@ -22,10 +22,8 @@ export default function ProductPage({ pageContext }) {
                 <h4>{product.name}</h4>
                 <p className="productPageCost">${product.price.toFixed(2)}</p>
                 
-                <p dangerouslySetInnerHTML={{ __html:product.description.description}}></p>
-                {/* <ul>
-                  <li>Length: {product.length}</li>
-                </ul> */}
+                <p className="productDescription">{product.description.description}</p>
+                
                 <div className="btnShopping">
                 <Link to="/" className="btn btn-primary btnShopping">Continue Shopping</Link>
                 </div>
