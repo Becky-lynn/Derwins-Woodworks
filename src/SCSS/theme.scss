@@ -87,6 +87,10 @@ h1,h2,h3,h4,h5,h6 {
         margin-top: 50px;
         .cart {
             color: $popcolor;
+            font: $font2;
+        }
+        .table {
+            font: $font2;
         }
     }
     .form-group{

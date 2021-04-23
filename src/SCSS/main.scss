@@ -38,6 +38,11 @@ select{
 label{
   color: $popcolor;
   font-family: $font2;
+  font: bold;
+}
+input{
+  color: $popcolor;
+  font-family: $font2;
 }
 
 .price {
