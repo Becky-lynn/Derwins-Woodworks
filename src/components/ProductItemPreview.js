@@ -1,7 +1,7 @@
  import React from "react"
  import { Link } from "gatsby"
 
- export default function productItemPreview({product}) {
+ export default function ProductItemPreview({product}) {
      return(
     <>
        <div className="col-sm-4 col-md-4 col-lg-4">
