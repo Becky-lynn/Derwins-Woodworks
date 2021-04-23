@@ -10,7 +10,7 @@
             <h4>{product.name}</h4>
             <p>${product.price.toFixed(2)}</p>
 
-         <Link to={"/product/" + product.slug} className="btn btn-primary">Details</Link>
+         <Link to={"/product/" + product.slug} className="btn btn-primary details">Details</Link>
          </div>
        </div>
      </>

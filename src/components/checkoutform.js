@@ -27,7 +27,7 @@ export default function CheckoutForm() {
 
     return (
         <>
-        <h2>Your Details</h2>
+        <h2 className="details">Your Details</h2>
         
 
         <form className="checkOutForm" name="checkOut" method="POST" data-netlify="true" actions="/thankyou.js">
