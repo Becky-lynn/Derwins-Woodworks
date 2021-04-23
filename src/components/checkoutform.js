@@ -63,7 +63,7 @@ export default function CheckoutForm() {
                 <input className="form-control" type="text" name="zipCode" id="zipCode" placeholder="Your Zip Code" value={zipCode} onChange={(e) => { setzipCode(e.target.value) } } required />
             </div>  
             <div>
-                <button className="btn btn-lg btn-primary placeOrder" onClick={() => saveOrder()}>Place Order</button>
+                <button type="submit" className="btn btn-lg btn-primary placeOrder" onClick={() => saveOrder()}>Place Order</button>
             </div> 
             </form>
       </>    
