@@ -10,7 +10,7 @@ export default function Contact() {
            <div className="contact">
            <hr>
            <span><h3 className="page help">Please let us know how we can help...</h3></span>
-             <hr/>
+             </hr>
   
           <form name="contact" method="POST" data-netlify="true" actions="/thankyou.js">
           <input type="hidden" name="form-name" value="contact" />
