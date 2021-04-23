@@ -12,7 +12,6 @@ const Seo = ({ title, description, image, article }) => {
     defaultTitle,
     titleTemplate,
     defaultDescription,
-    siteUrl,
     defaultImage,
   } = site.siteMetadata
 
@@ -20,7 +19,6 @@ const Seo = ({ title, description, image, article }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
   }
 
   return (
@@ -28,7 +26,6 @@ const Seo = ({ title, description, image, article }) => {
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
-      {seo.url && <meta property="og:url" content={seo.url} />}
 
       {(article ? true : null) && <meta property="og:type" content="article" />}
 
