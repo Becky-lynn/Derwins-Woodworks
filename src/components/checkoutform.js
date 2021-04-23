@@ -44,17 +44,17 @@ export default function CheckoutForm() {
             </div>
 
             <div className="form-group">
-                <label htmlFor="streetAddress">Street Address</label>
+                <label htmlFor="streetAddress">Your Street Address</label>
                 <input className="form-control" type="text" name="streetAddress" id="streetAddress" placeholder="Your Street Address" value={streetAddress} onChange={(e) => { setStreetAddress(e.target.value) } } required />
             </div> 
 
             <div className="form-group">
-                <label htmlFor="city">City</label>
+                <label htmlFor="city">Your City</label>
                 <input className="form-control" type="text" name="city" id="city" placeholder="Your City" value={city} onChange={(e) => { setCity(e.target.value) } } required />
             </div>
 
             <div className="form-group">
-                <label htmlFor="state">State</label>
+                <label htmlFor="state">Your State</label>
                 <input className="form-control" type="text" name="state" id="state" placeholder="Your State" value={state} onChange={(e) => { setState(e.target.value) } } required />
             </div>
 

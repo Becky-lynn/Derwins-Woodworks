@@ -1,7 +1,6 @@
 import React from "react"
 import Default from "../layout/default.js"
 import CheckoutForm from "../components/CheckoutForm.js"
-// import CheckoutForm from "../components/checkoutForm.js"
 import Cart from "../components/cart.js"
 import Seo from "../components/seo.js"
 
