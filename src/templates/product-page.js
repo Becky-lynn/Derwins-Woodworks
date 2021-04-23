@@ -23,6 +23,8 @@ export default function ProductPage({ pageContext }) {
                 <p className="productPageCost">${product.price.toFixed(2)}</p>
                 
                 <p className="productDescription">{product.description.description}</p>
+
+                <p className="measurements">{product.measurements.measurements}</p>
                 
                 <div className="btnShopping">
                 <Link to="/" className="btn btn-primary btnShopping">Continue Shopping</Link>

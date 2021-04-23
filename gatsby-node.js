@@ -15,6 +15,9 @@ exports.createPages = async ({ graphql, actions }) => {
         description {
           description
         }
+        measurements {
+          measurements
+        }
         image {
           file {
             url

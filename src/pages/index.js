@@ -44,6 +44,9 @@ const IndexPage = ({ data }) => {
         description {
           description
         }
+        measurements {
+          measurements
+        }
         image {
           file {
             url
