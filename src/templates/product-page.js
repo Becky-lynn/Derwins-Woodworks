@@ -33,7 +33,7 @@ export default function ProductPage({ pageContext }) {
 
 
              <div className="col-sm-2">
-              <div className="quanityWrapper">   
+              {/* <div className="quanityWrapper">   
                <div> 
                     <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
                </div>     
@@ -43,7 +43,7 @@ export default function ProductPage({ pageContext }) {
                         <option value="three">3</option>
                         <option value="four">4</option>
                     </select>
-                    </div>
+                    </div> */}
                   <div className="cartButtons">  
 
                     <AddToCart item={ {sku: product.slug, price: product.price, name: product.name} }></AddToCart>
