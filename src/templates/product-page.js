@@ -14,6 +14,7 @@ export default function ProductPage({ pageContext }) {
          <Seo title={product.name} description={"I hope you enjoy shopping on our site."}></Seo>
 
          <div className="row productPage">
+
              <div className="col-sm-6">
                 <img className="img-fluid" src={product.image.file.url} alt={product.name} />
              </div>
@@ -27,37 +28,38 @@ export default function ProductPage({ pageContext }) {
                 <p className="measurements">{product.measurements.measurements}</p>
                 
                 <div className="btnShopping">
-                <Link to="/" className="btn btn-primary btnShopping">Continue Shopping</Link>
+                  <Link to="/" className="btn btn-primary btnShopping">Continue Shopping</Link>
                 </div>
              </div>
 
 
              <div className="col-sm-2">
-              <div className="quanityWrapper">   
-               <div> 
+
+              <div className="quanityWrapper">    
+                <div> 
                     <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
-               </div>     
+                </div>     
                     <select className="productQuanity" name="quanity" size="1">
                         <option value="one">1</option>
                         <option value="two">2</option>
                         <option value="three">3</option>
                         <option value="four">4</option>
                     </select>
-                    </div>
-                  <div className="cartButtons">  
+                </div>
+          
+                <div className="cartButtons">  
 
                     <AddToCart item={ {sku: product.slug, price: product.price, name: product.name} }></AddToCart>
                     <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
                     
-                 </div>
-               </div>     
+                </div>  
+              </div>   
                  {/* <p>
                     
                     {/* ${product.cost} */}
                  {/* </p> */} 
 
-               </div>
-                
+</div>
         </Default>
     )
 }
