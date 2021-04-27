@@ -153,19 +153,23 @@ h1,h2,h3,h4,h5,h6 {
                 // background-color: #f1edea;
                 color: $popcolor;
             label {
-                font-style: $font2;
+                font-family: $font2;
                 color: $popcolor;
             }
             input {
-                font-style: $font2;
+                font-family: $font2;
                 color: $brandcolor;
             }
             textarea {
-                font-style: $font2;
+                font-family: $font2;
                 color: $brandcolor; 
             }
             ::placeholder {
-                font-style: $font2;
+                font-family: $font2;
+                color: $brandcolor;
+            }
+            ::webkit-textarea-placeholder {
+                font-family: $font2;
                 color: $brandcolor;
             }
         }
