@@ -38,29 +38,22 @@ export default function ProductPage({ pageContext }) {
 
               <div className="quanityWrapper">    
                 <div> 
-                    <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
+                    <label htmlFor="quanity" className="qty" for="quanity">Quanity:</label>
                 </div>     
-                    <select onChange={() => setQty(qty + 1)} className="productQuanity" name="quanity">
+                    <select value="value" onChange={() => setQty(qty + 1)} className="productQuanity" name="quanity">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                        <option value="4">4</option> 
+                    </select> 
                 </div>
-          
                 <div className="cartButtons">  
-
                     <AddToCart item={ {sku: product.slug, image: product.image, price: product.price, name: product.name , qty: qty} }></AddToCart>
                     <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
-                    
                 </div>  
-              </div>   
-                 {/* <p>
-                    
-                    {/* ${product.cost} */}
-                 {/* </p> */} 
 
-</div>
+          </div>
+          </div>
         </Default>
     )
 }
