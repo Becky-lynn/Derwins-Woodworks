@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
+import React from "react"
 import Default from "../layout/default.js"
 import { Link } from "gatsby"
 import Seo from "../components/seo.js"
@@ -6,7 +7,7 @@ import AddToCart from "../components/add-to-cart.js"
 
 export default function ProductPage({ pageContext }) {
 
-    const [qty, setQty ] = useState(1)
+    // const [qty, setQty ] = useState(1)
     const { product } = pageContext;
 
     return(
@@ -40,7 +41,9 @@ export default function ProductPage({ pageContext }) {
                 <div> 
                     <label htmlFor="quanity" className="qty" for="quanity">Quanity:</label>
                 </div>     
-                    <select value="value" onChange={() => setQty(qty + 1)} className="productQuanity" name="quanity">
+                    {/* <select value="value" onChange={() => setQty(qty + 1)} className="productQuanity" name="quanity"> */}
+                    <select value="qty" className="productQuanity" name="quanity">
+
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -48,7 +51,9 @@ export default function ProductPage({ pageContext }) {
                     </select> 
                 </div>
                 <div className="cartButtons">  
-                    <AddToCart item={ {sku: product.slug, image: product.image, price: product.price, name: product.name , qty: qty} }></AddToCart>
+                    {/* <AddToCart item={ {sku: product.slug, image: product.image, price: product.price, name: product.name , qty: qty} }></AddToCart> */}
+                    <AddToCart item={ {sku: product.slug, image: product.image, price: product.price, name: product.name } }></AddToCart>
+
                     <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
                 </div>  
 
