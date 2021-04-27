@@ -121,24 +121,6 @@ $font2: 'Space Grotesk';
 
   
 
-// .cartBadge{
-//   float: right;
-//   margin: 0;
-//   a.fa-shopping-cart {
-//     font-size: x-large;
-//     margin-top: 10px;
-//     margin: 0;
-//     height: fit-content;
-//     color: $popcolor;
-// }
-//   .badge-light {
-//     color: #5b4b49;
-//     background-color: #faf5f0;
-//     border-radius: 10px;
-//     font-size: small;
-//     margin: 0;
-//   }
-// }
 
 hr {
   margin-top: 1rem;
@@ -147,6 +129,7 @@ hr {
 }
 
 //@ media for navbar
+
 @media screen and (min-width: 360px) and (max-width: 736px) {
   header {
     h1 {
