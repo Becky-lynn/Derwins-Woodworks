@@ -23,7 +23,7 @@ export default function Cart() {
                             return (
                                 <tr className="price">
                                     <td>
-                                        {item.sku}
+                                        <img src={item.image.file.url} alt={item.name} className="img-thumbnail" />
                                     </td>
                                     <td>
                                         {item.qty}

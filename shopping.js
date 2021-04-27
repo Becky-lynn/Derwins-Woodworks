@@ -16,10 +16,10 @@ const cart = {
         }
 
         if (item.sku in cart) {
-            cart[item.sku].qty += 1
+            cart[item.sku].qty += item.qty;
         }
         else {
-            item.qty = 1;
+            // item.qty = 1;
             cart[item.sku] = item;
         }
 

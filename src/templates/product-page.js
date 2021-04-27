@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Default from "../layout/default.js"
 import { Link } from "gatsby"
 import Seo from "../components/seo.js"
@@ -6,6 +6,7 @@ import AddToCart from "../components/add-to-cart.js"
 
 export default function ProductPage({ pageContext }) {
 
+    const [qty, setQty ] = useState(1)
     const { product } = pageContext;
 
     return(
@@ -39,17 +40,17 @@ export default function ProductPage({ pageContext }) {
                 <div> 
                     <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
                 </div>     
-                    <select className="productQuanity" name="quanity" size="1">
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
+                    <select onClick={() => setQty(qty + 1)} className="productQuanity" name="quanity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                     </select>
                 </div>
           
                 <div className="cartButtons">  
 
-                    <AddToCart item={ {sku: product.slug, price: product.price, name: product.name} }></AddToCart>
+                    <AddToCart item={ {sku: product.slug, image: product.image, price: product.price, name: product.name , qty: qty} }></AddToCart>
                     <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
                     
                 </div>  
