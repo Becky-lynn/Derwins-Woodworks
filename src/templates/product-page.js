@@ -49,7 +49,7 @@ export default function ProductPage({ pageContext }) {
                 </div>
                 <div className="cartButtons">  
                     <AddToCart item={ {sku: product.slug, image: product.image, price: product.price, name: product.name , qty: qty} }></AddToCart>
-                    <Link to="/shoppingcart.js" className="btn btn-primary">View Cart</Link>
+                    <Link to="/shoppingcart" className="btn btn-primary">View Cart</Link>
                 </div>  
 
           </div>
