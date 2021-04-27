@@ -40,7 +40,7 @@ export default function ProductPage({ pageContext }) {
                 <div> 
                     <label htmlFor="quanity" className="form-field-title" for="quanity">Quanity:</label>
                 </div>     
-                    <select onClick={() => setQty(qty + 1)} className="productQuanity" name="quanity">
+                    <select onChange={() => setQty(qty + 1)} className="productQuanity" name="quanity">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

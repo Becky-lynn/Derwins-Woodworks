@@ -28,6 +28,7 @@ export default function CheckoutForm() {
     return (
         <>
         <h2 className="details">Your Details</h2>
+        <h5>To process your order please provide the following details.</h5>
         
 
         <form className="checkOutForm" name="checkOut" method="POST" data-netlify="true" actions="/thankyou.js">

@@ -13,22 +13,23 @@ export default function Cart() {
                     <table className="table">
                         <thead>
                             <tr className="priceHeader">
-                                <th>Item</th>
-                                <th>Qty</th>
-                                <th>Cost</th>
+                                <th className="thItem">Item</th>
+                                <th className="thQty">Qty</th>
+                                <th className="thCost">Cost</th>
                             </tr>
                         </thead>
                         <tbody>
                         {items.map(item => {
                             return (
                                 <tr className="price">
-                                    <td>
+                                    <td className="thumbnail">
                                         <img src={item.image.file.url} alt={item.name} className="img-thumbnail" />
+                                        <span className="name">{item.name}</span>
                                     </td>
-                                    <td>
+                                    <td className="itemQty">
                                         {item.qty}
                                     </td>
-                                    <td className="price">
+                                    <td className="price itemPrice">
                                         ${(item.qty * item.price).toFixed(2)}
                                     </td>
                                 </tr>
@@ -38,17 +39,17 @@ export default function Cart() {
                     </table>
                 </div>
                 <div className="col-sm-4 cart">
-
-                    SubTotal: <span className="price">${subTotal.toFixed(2)}</span>
+                 <div className="priceBreakdown">
+                    SubTotal: <span className="price subTotal">${subTotal.toFixed(2)}</span>
                     <br />
-                    Taxes: <span className="price">${taxes.toFixed(2)}</span>
+                    Taxes: <span className="price taxes">${taxes.toFixed(2)}</span>
                     <br />
-                    Shipping: <span className="price">${shipping.toFixed(2)}</span>
+                    Shipping: <span className="price shipping">${shipping.toFixed(2)}</span>
                     <br />
-                    Grand Total: <span className="price"><strong>${grandTotal.toFixed(2)}</strong></span>
+                    Grand Total: <span className="price grandTotal"><strong>${grandTotal.toFixed(2)}</strong></span>
 
                     <Link to={"/"} className="btn btn-primary btnShopping">Continue Shopping</Link>
-
+                 </div>   
                 </div>
             </div>
         </>

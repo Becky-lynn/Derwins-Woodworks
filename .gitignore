@@ -2,3 +2,4 @@ node_modules/
 .cache/
 public
 .env.development
+static/images/.DS_Store

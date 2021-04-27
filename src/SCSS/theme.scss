@@ -85,6 +85,9 @@ h1,h2,h3,h4,h5,h6 {
     //Shopping Cart Page
     .shoppingCart {
         margin-top: 50px;
+        p {
+            color: $brandcolor;
+        }
         .cart {
             color: $popcolor;
             font-family: $font2;
@@ -92,7 +95,55 @@ h1,h2,h3,h4,h5,h6 {
         .table {
             font-family: $font2;
         }
+        .thumbnail {
+            width: 60%;
+        }
+        .img-thumbnail {
+            width: 20%;
+            border: 1px solid $popcolor;
+            margin: 0;
+            padding: 0;
+        }
+        .thItem {
+            padding-left: 35px;
+        }
+        .thQty {
+            padding-left: 5px;
+        }
+        .thCost {
+            padding-left: 25px;
+        }
+        .itemQty {
+            padding-top: 41px;
+        }
+        .itemPrice {
+            padding-top: 41px;
+        }
+        .priceBreakdown {
+            width: fit-content;
+            margin-left: 20%;
+            border: solid 1px $popcolor;
+            padding: 20px;
+            box-shadow: 5px 5px 30px 10px $brandcolor inset;
+         
+        }
     }
+    span.name {
+            margin-left: 20px;
+        }
+    span.subTotal {
+            margin-left: 25px;
+        }
+    span.taxes {
+            margin-left: 45px;
+        }
+    span.shipping {
+            margin-left: 25px;
+        }
+    span.grandTotal {
+        margin-left: 5px;
+    }    
+
     .form-group{
             // form{
                 margin: 5px 300px;
