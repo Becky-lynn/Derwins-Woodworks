@@ -40,7 +40,7 @@ export default function ProductPage({ pageContext }) {
                 <div> 
                     <label htmlFor="quanity" className="qty" for="quanity">Quanity:</label>
                 </div>     
-                    <select value={qty} onChange={(e) => setQty(e.target.value)} className="productQuanity" name="quanity">
+                    <select value={qty} onChange={(e) => setQty(parseInt(e.target.value))} className="productQuanity" name="quanity">
 
                         <option value="1">1</option>
                         <option value="2">2</option>
