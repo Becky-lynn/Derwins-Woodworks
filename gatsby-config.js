@@ -11,6 +11,7 @@ module.exports = {
       "Our Arkansas cutting boards are amazing!  They are made with different types of wood to give them a unique look.",
      url: "https://fervent-poincare-850baa.netlify.app",  
     image: "/images/fredderwin.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@becky9468",
   },
 
   plugins: [
