@@ -70,6 +70,11 @@ h1,h2,h3,h4,h5,h6 {
         width: fit-content;
         margin: auto;
         //inline-size: fit-content;
+        label {
+            color: $brandcolor;
+            font-size: large;
+            font-weight: bold;
+        }
     } 
     .productQuanity{
         border-style: hidden;
