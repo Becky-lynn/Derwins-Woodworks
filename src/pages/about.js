@@ -13,7 +13,7 @@ export default function About() {
             {/* <h1>About Us</h1> */}
 
             {/* <p>Welcome to Derwin's Woodworks</p> */}
-            <p><img className="img-fluid" src="/images/fredderwin-2.png" alt="Fred Derwin" /></p>
+            <p><img className="img-fluid" src="/images/fredderwin-2.jpg" alt="Fred Derwin" /></p>
           </div>
           <div className="col-sm-7">
           <p>When Fred was 30 years of age he decided to go to college and become an architect.  He graduated from Fay Jones School of Architecture at the University of Arkansas in 1978.  He graduated #1 in his class and was asked by Fay Jones to work for him while he was doing his apprenticeship. While working for Fay Jones he was one of the original draftsman on the Thorncrown Chapel in Eureka Springs, Arkansas. When he took the Arkansas board exam for architects he ranked #3 in the state.  During his career he owned Fred Derwin Design and Construction and Architectural Resources.  He designed and built homes in the Fayetteville, Arkansas, area as well a few commercial projects.  He is known for his cabinet work in the homes he built and designed.</p>
