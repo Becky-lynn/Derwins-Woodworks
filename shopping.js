@@ -102,7 +102,7 @@ export const CartContextProvider = ({children}) => {
 
     const contextValues = {
         addProduct,
-        addimage,
+        addImage,
         ...totals(cart),
         ...state
     }
