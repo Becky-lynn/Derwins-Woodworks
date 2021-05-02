@@ -23,7 +23,7 @@ export default function Cart() {
                             return (
                                 <tr className="price">
                                     <td className="thumbnail">
-                                        <img src={item.image.file.url} alt={item.name} className="img-thumbnail" />
+                                        <img srcSet={item.image.file.url} alt={item.name} className="img-thumbnail" />
                                         <span className="name">{item.name}</span>
                                     </td>
                                     <td className="itemQty">
